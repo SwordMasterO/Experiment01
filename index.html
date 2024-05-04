@@ -18,15 +18,16 @@
     }
     /* Header Styles */
 	#header {
-	  background-color: rgba(253, 147, 174, 0); /* Transparent color */
+	  background-color: rgba(253, 147, 174, 0);
 	  color: #fff;
 	  padding: 10px 0;
 	  text-align: center;
-	  position: fixed; /* Fixed position */
+	  position: fixed;
 	  top: 0;
-	  width: 100%; /* Full width */
+	  width: 100%;
 	  z-index: 1001; /* Ensure the header floats above other content */
-	  transition: background-color 2.0s ease; /* Transition the background color */
+	  transition: background-color 2.0s ease;
+	z-index: 1004;
 	}
 
 	#header.visible {
@@ -89,6 +90,7 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
 	  font-size:2em; 
+	margin-bottom: 5em;
     }
 	
 	#applet{
@@ -173,10 +175,21 @@
   .quote-text {
     font-size: 18px; /* Adjust font size for smaller screens */
   }
-
-  #button, #applet {
+	    
+ .buttons-container {
+      position: absolute;
+      top: 60%;
+      left: 50px; /* Adjust the left position as needed */
+      transform: translateY(-50%);
+	  text-align: center;
+    }
+  #button{
     padding: 8px 16px; /* Adjust padding for smaller screens */
     font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+  #applet{
+    padding: 8px 70px; /* Adjust padding for smaller screens */
+    font-size: 1.5em;
   }
 }
   </style>
@@ -209,13 +222,6 @@
     </div>
     <div class="buttons-container">
       <button id="button"><a href="about.html" style="text-decoration:none; color:#fff">About this website</a></button><br><br>
-	  <br><br>
-	  <br><br>
-      <br><br>
-	  <br><br>
-	  <br><br> 
-      <br><br>
-	  <br><br>
       <button id="applet"><a href="form.html" style="text-decoration:none; color:#fff">Take a Quiz</a></button>
     </div>
   </div>
