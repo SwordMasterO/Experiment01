@@ -9,39 +9,38 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      overflow-x: hidden; /* Hide horizontal scrollbar */
+      overflow-x: hidden;
     }
     .container {
-      max-width: 1200px;
+      max-width: 75vw;
       margin: 0 auto;
-      padding: 20px;
+      padding: 1.25vw;
     }
-    /* Header Styles */
-	#header {
-	  background-color: rgba(253, 147, 174, 0); /* Transparent color */
-	  color: #fff;
-	  padding: 10px 0;
-	  text-align: center;
-	  position: fixed; /* Fixed position */
-	  top: 0;
-	  width: 100%; /* Full width */
-	  z-index: 1001; /* Ensure the header floats above other content */
-	  transition: background-color 2.0s ease; /* Transition the background color */
-	}
+    #header {
+      background-color: rgba(253, 147, 174, 0);
+      color: #fff;
+      padding: 0.625vw 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1001;
+      transition: background-color 2.0s ease;
+    }
 
-	#header.visible {
-	  background-color: rgba(253, 147, 174, 1); /* Change background color when visible */
-	}
-	
-	#profile-image {
-	  position: absolute;
-	  top: 5px; /* Adjust top position as needed */
-	  right: 30px; /* Adjust right position as needed */
-	  width: 100px; /* Adjust width as needed */
-	  height: 100px; /* Adjust height as needed */
-	  border-radius: 50%; /* Make it circular */
-	  border: 2px solid #fff; /* Add border */
-	}
+    #header.visible {
+      background-color: rgba(253, 147, 174, 1);
+    }
+    
+    #profile-image {
+      position: absolute;
+      top: 0.3125vw;
+      right: 1.875vw;
+      width: 6.25vw;
+      height: 6.25vw;
+      border-radius: 50%;
+      border: 0.125vw solid #fff;
+    }
 
     nav ul {
       list-style-type: none;
@@ -50,21 +49,20 @@
     }
     nav ul li {
       display: inline;
-      margin: 0 10px;
+      margin: 0 0.625vw;
     }
     nav ul li a {
       text-decoration: none;
       color: #fff;
       font-weight: bold;
     }
-    /* Hero Section Styles */
     .hero {
-      position: relative; /* Relative position */
+      position: relative;
     }
     .slideshow-container {
       max-width: 100%;
       margin: auto;
-	z-index: -1;
+      z-index: -1;
     }
     #myVideo {
       width: 100%;
@@ -73,78 +71,77 @@
  .buttons-container {
       position: absolute;
       top: 50%;
-      left: 50px; /* Adjust the left position as needed */
+      left: 3.125vw;
       transform: translateY(-50%);
       text-align: center;
     }
     #button {
       display: inline-block;
-      padding: 10px 20px;
-      margin-right: 10px;
-      background-color: #E12366; /* Button color */
+      padding: 0.625vw 1.25vw;
+      margin-right: 0.625vw;
+      background-color: #E12366;
       color: #fff;
       font-weight: bold;
       border: none;
-      border-radius: 5px;
+      border-radius: 0.625vw;
       cursor: pointer;
       transition: background-color 0.3s ease;
-	  font-size:2em; 
-	z-index: 1001;
+      font-size: 1.5vw; 
+      z-index: 1001;
     }
-	
-	#applet{
-	  display: inline-block;
-      padding: 10px 74px;
-      margin-right: 10px;
-      background-color: #E12366; /* Button color */
+  
+  #applet {
+      display: inline-block;
+      padding: 0.625vw 4.625vw;
+      margin-right: 0.625vw;
+      background-color: #E12366;
       color: #fff;
       font-weight: bold;
       border: none;
-      border-radius: 5px;
+      border-radius: 0.625vw;
       cursor: pointer;
       transition: background-color 0.3s ease;
-	  font-size:2em; 
-		z-index: 1001;
-	}
-	
-    #button:hover,#applet:hover {
-      background-color: #C01752; /* Button color on hover */
+      font-size: 1.5vw; 
+      z-index: 1001;
     }
-	
-	.quote {
-	  position: absolute;
-	  top: 181.5%; /* Position it vertically at 50% */
-	  left: 28%; /* Position it horizontally at 50% */
-	  transform: translate(-50%, -50%); /* Center the element */
-	  text-align: left;
-	  padding: 20px; /* Add padding for space around the quote */
-	  border-radius: 10px; /* Add rounded corners for a box-like appearance */
-	  width: 48%; /* Set the desired width */
-	}
+    
+    #button:hover, #applet:hover {
+      background-color: #C01752;
+    }
+    
+    .quote {
+      position: absolute;
+      top: 11.34375vw;
+      left: 1.75vw;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      padding: 1.25vw;
+      border-radius: 0.625vw;
+      width: 48%;
+    }
 
-	.quote-text {
-	  font-size: 24px; /* Adjust the font size as needed */
-	  color: #333; /* Choose an appropriate color */
-	  font-style: italic; /* Optionally make it italic */
-	  margin-bottom: 20px; /* Add some space below the quote */
-	}
+    .quote-text {
+      font-size: 1.5vw;
+      color: #333;
+      font-style: italic;
+      margin-bottom: 1.25vw;
+    }
 
-    /* Footer Styles */
     footer {
       background-color: #FD93AE;
       color: #fff;
       text-align: center;
-      padding: 20px 0;
+      padding: 1.25vw 0;
       width: 100%;
       bottom: 0;
       position: relative;
-	z-index: 999;
+      z-index: 999;
     }
-	
-	    #myMedia {
+
+    #myMedia {
       width: 100%;
       height: auto;
-	 z-index: 998;
+      z-index: 998;
     }
 
     h2 {
@@ -154,11 +151,9 @@
       font-weight: bold;
     }
 
-    /* Fade in header on scroll */
     .show-header {
       opacity: 1;
     }
-	
   </style>
 </head>
 <body>
@@ -173,7 +168,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-	<img src="images0.png" alt="Profile Image" id="profile-image">
+    <img src="images0.png" alt="Profile Image" id="profile-image">
 </div>
   <div class="hero">
     <div class="slideshow-container">
@@ -189,20 +184,20 @@
     </div>
     <div class="buttons-container">
       <button id="button"><a href="about.html" style="text-decoration:none; color:#fff">About this website</a></button><br><br>
-	  <br><br>
-	  <br><br>
-	  <br><br>
-	  <br><br>
-	  <br><br> 
-      	  <br><br>
-	  <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br> 
+      <br><br>
+      <br><br>
       <button id="applet"><a href="form.html" style="text-decoration:none; color:#fff">Take a Quiz</a></button>
     </div>
   </div>
   <div class="quote">
-  <p class="quote-text">"PCOD is a challenging condition, but it doesn't restrict you. 
-  With proper understanding, management, and support, individuals with PCOD can lead healthy
-  , fulfilling lives"</p>
+    <p class="quote-text">"PCOD is a challenging condition, but it doesn't restrict you. 
+    With proper understanding, management, and support, individuals with PCOD can lead healthy,
+    fulfilling lives"</p>
   </div>
   <footer>
     <p>&copy; 2024 The Well Woman Guide. All Rights Reserved.</p>
