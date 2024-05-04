@@ -154,7 +154,31 @@
     .show-header {
       opacity: 1;
     }
-	
+
+    @media only screen and (max-width: 600px) {
+  #profile-image {
+    width: 50px; /* Adjust width for smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+    top: 2px; /* Adjust top position for smaller screens */
+    right: 15px; /* Adjust right position for smaller screens */
+  }
+
+  .quote {
+    top: 100%; /* Adjust top position for smaller screens */
+    left: 50%; /* Adjust left position for smaller screens */
+    transform: translate(-50%, -100%); /* Center horizontally and position above */
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .quote-text {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  #button, #applet {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+}
   </style>
 </head>
 <body>
